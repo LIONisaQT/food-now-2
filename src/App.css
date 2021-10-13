@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-header {
@@ -11,6 +11,75 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-question {
+  max-width: 937px;
+  margin: 30px auto;
+  overflow: auto;
+  align-items: left;
+  justify-content: left;
+  min-height: 150px;
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.App-location {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 50px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.App-distance {
+  max-width: 500px;
+  margin: 10px auto;
+  overflow: auto;
+  min-height: 150px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.App-price {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 150px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.App-rating {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 150px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.App-attributes {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 150px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
 }
 
 .App-link {
