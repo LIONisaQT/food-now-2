@@ -1,6 +1,5 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Slider from '@mui/material/Slider';
+import { Checkbox, FormControl, FormControlLabel, FormGroup } from '@mui/material';
 
 const marks = [
   {
@@ -27,16 +26,33 @@ function valuetext(value) {
 
 export default function DiscreteSliderMarks() {
   return (
-    <Box sx={{ width: 350 }}>
-      <Slider
-        aria-label="Custom marks"
-        defaultValue={0}
-        step={1}
-        valueLabelDisplay="off"
-        marks={marks}
-        min = {0}
-        max = {3}
-      />
-    </Box>
+    <FormControl component="fieldset">
+      <FormGroup aria-label="position" row>
+        <FormControlLabel
+          value="$"
+          control={<Checkbox />}
+          label="$"
+          labelPlacement="bottom"
+        />
+        <FormControlLabel
+          value="$$"
+          control={<Checkbox />}
+          label="$$"
+          labelPlacement="bottom"
+        />
+        <FormControlLabel
+          value="$$$"
+          control={<Checkbox />}
+          label="$$$"
+          labelPlacement="bottom"
+        />
+        <FormControlLabel
+          value="$$$$"
+          control={<Checkbox />}
+          label="$$$$"
+          labelPlacement="bottom"
+        />
+      </FormGroup>
+    </FormControl>
   );
 }
