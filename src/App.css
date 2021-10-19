@@ -3,7 +3,9 @@
 }
 
 .App-header {
-  background-color: #be4d4d;
+  /* background-color: #be4d4d; */
+  background: rgb(251,161,70);
+  background: linear-gradient(0deg, rgba(251,161,70,1) 0%, rgba(210,0,0,1) 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -14,13 +16,10 @@
 }
 
 .App-question {
-  max-width: 937px;
+  max-width: 500px;
   margin: 30px auto;
   overflow: auto;
-  align-items: left;
-  justify-content: left;
   min-height: 150px;
-  font-size: 20px;
   padding: 30px;
   border-radius: 5px;
   background-color: white;
@@ -31,7 +30,7 @@
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
-  min-height: 50px;
+  min-height: 150px;
   padding: 30px;
   border-radius: 5px;
   background-color: white;
@@ -72,7 +71,7 @@
 }
 
 .App-attributes {
-  max-width: 500px;
+  max-width: 300px;
   margin: 30px auto;
   overflow: auto;
   min-height: 150px;
