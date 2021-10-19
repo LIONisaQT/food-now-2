@@ -1,9 +1,10 @@
 import './App.css';
-import Button from '@mui/material/Button';
 import Rating from '@mui/material/Rating';
 import DistanceSlider from './components/DistanceSlider.js';
 import PriceSlider from './components/PriceSlider.js';
 import Attributes from './components/Attributes.js';
+import RestaurantModal from './components/RestaurantModal';
+import CategoryList from './components/CategoryList';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <h1>Food Now!</h1>
         <section className="App-question">
           <h4>1. Choose categories!</h4>
+          <CategoryList />
         </section>
         <section className="App-location">
           <h4>2. WYA?</h4>
@@ -32,7 +34,7 @@ function App() {
           <h4>6. Additional attributes</h4>
           <Attributes />
         </section>
-        <Button variant ="contained">Food Now!</Button>
+        <RestaurantModal />
       </header>
 
     </div>
