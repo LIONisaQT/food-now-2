@@ -1,10 +1,11 @@
+@import url(/src/css/Colors.css);
+
 .App {
   text-align: left;
 }
 
 .App-header {
-  background: rgb(251,161,70);
-  background: linear-gradient(0deg, rgba(251,161,70,1) 0%, rgba(210,0,0,1) 100%);
+  background: linear-gradient(var(--red), var(--orange));
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -81,5 +82,5 @@
 }
 
 .App-link {
-  color: #fbbd61;
+  color: var(--mango);
 }
