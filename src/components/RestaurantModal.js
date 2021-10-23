@@ -1,9 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import { FormControl, FormControlLabel, FormGroup } from '@mui/material';
 
 const style = {
   position: 'absolute',
@@ -24,8 +22,7 @@ export default function RestaurantModal() {
 
   return (
     <div>
-      <Box onClick={handleOpen}>GET FOOD NOW! </Box>  
-      {/* <Button onClick={handleOpen} variant="contained">GET FOOD NOW!</Button> */}
+      <Box onClick={handleOpen}>GET FOOD NOW!</Box>  
       <Modal
         open={open}
         onClose={handleClose}

@@ -1,10 +1,6 @@
 import * as React from 'react';
 import { Checkbox, FormControl, FormControlLabel, FormGroup } from '@mui/material';
 
-function valuetext(value) {
-  return `${value}°C`;
-}
-
 export default function DiscreteSliderMarks() {
   return (
     <FormControl component="fieldset">
