@@ -15,22 +15,22 @@ function App() {
           <h4>1. Choose categories!</h4>
           <CategoryList />
         </section>
-        <section className="App-location">
+        <section className="App-question">
           <h4>2. WYA?</h4>
         </section>
-        <section className="App-distance">
+        <section className="App-question">
           <h4>3. How lazy are you?</h4>
           <DistanceSlider />
         </section>
-        <section className="App-price">
+        <section className="App-question">
           <h4>4. How cheap are you?</h4>
           <PriceSlider />
         </section>
-        <section className="App-rating">
+        <section className="App-question">
           <h4>5. How low is the bar?</h4>
           <Rating name="half-rating" defaultValue={0} precision={0.5} size="large" />
         </section>
-        <section className="App-attributes">
+        <section className="App-question">
           <h4>6. Additional attributes</h4>
           <Attributes />
         </section>

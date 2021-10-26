@@ -1,7 +1,7 @@
 @import url(/src/css/Colors.css);
 
 .App {
-  text-align: left;
+  text-align: center;
 }
 
 .App-header {
@@ -16,67 +16,13 @@
 }
 
 .App-question {
-  max-width: 500px;
+  width: 70vw;
   margin: 30px auto;
   overflow: auto;
   min-height: 150px;
   padding: 30px;
   border-radius: 5px;
-  background-color: white;
-  color: black;
-}
-
-.App-location {
-  max-width: 500px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 150px;
-  padding: 30px;
-  border-radius: 5px;
-  background-color: white;
-  color: black;
-}
-
-.App-distance {
-  max-width: 500px;
-  margin: 10px auto;
-  overflow: auto;
-  min-height: 150px;
-  padding: 30px;
-  border-radius: 5px;
-  background-color: white;
-  color: black;
-}
-
-.App-price {
-  max-width: 500px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 150px;
-  padding: 30px;
-  border-radius: 5px;
-  background-color: white;
-  color: black;
-}
-
-.App-rating {
-  max-width: 500px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 150px;
-  padding: 30px;
-  border-radius: 5px;
-  background-color: white;
-  color: black;
-}
-
-.App-attributes {
-  max-width: 300px;
-  margin: 30px auto;
-  overflow: auto;
-  min-height: 150px;
-  padding: 30px;
-  border-radius: 5px;
+  align-items: center;
   background-color: white;
   color: black;
 }
