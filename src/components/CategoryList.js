@@ -5,7 +5,7 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 
 export default function CategoryList() {
   return (
-    <ImageList sx={{ width: 300, height: 250 }} cols={4} rowHeight={120}>
+    <ImageList cols={4} rowHeight={120}>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
           <img

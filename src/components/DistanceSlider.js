@@ -12,7 +12,7 @@ export default function DistanceSlider() {
   };
 
   return (
-    <Box sx={{ width: 350 }}>
+    <Box>
       <Grid container spacing={2} alignItems="center">
         <Grid item xs>
           <Slider
