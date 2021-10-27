@@ -5,21 +5,24 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 
 export default function CategoryList() {
   return (
-    <ImageList cols={4} rowHeight={120}>
-      {itemData.map((item) => (
-        <ImageListItem key={item.img}>
-          <img
-            src={`${item.img}`}
-            srcSet={`${item.img}`}
-            alt={item.title}
-            loading="lazy"
-          />
-          <ImageListItemBar
-            title={item.title}
-          />
-        </ImageListItem>
-      ))}
-    </ImageList>
+    <section className="App-question">
+      <h4>1. Choose categories!</h4>
+      <ImageList cols={4} rowHeight={120}>
+        {itemData.map((item) => (
+          <ImageListItem key={item.img}>
+            <img
+              src={`${item.img}`}
+              srcSet={`${item.img}`}
+              alt={item.title}
+              loading="lazy"
+            />
+            <ImageListItemBar
+              title={item.title}
+            />
+          </ImageListItem>
+        ))}
+      </ImageList>
+    </section>
   );
 }
 
