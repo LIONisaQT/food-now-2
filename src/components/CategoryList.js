@@ -3,7 +3,15 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 
-export default function CategoryList() {
+export default function CategoryList(props) {
+  let list = [];
+
+  list.push(itemData[0].title);
+  list.push(itemData[1].title);
+
+  const finalList = list.toString();
+  props.update("term",finalList);
+
   return (
     <section className="App-question">
       <h4>1. Choose categories!</h4>

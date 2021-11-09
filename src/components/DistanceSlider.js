@@ -4,9 +4,10 @@ import Grid from '@mui/material/Grid';
 import Slider from '@mui/material/Slider';
 import { Typography } from '@mui/material';
 
-export default function DistanceSlider() {
+export default function DistanceSlider(props) {
   const [value, setValue] = React.useState(10);
 
+  props.update("radius",value);
   const handleSliderChange = (event, newValue) => {
     setValue(newValue);
   };
