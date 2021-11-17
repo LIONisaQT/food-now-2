@@ -1,6 +1,6 @@
 import Rating from '@mui/material/Rating';
 
-export default function RatingSetting() {
+export default function RatingSetting(props) {
     return (
         <section className="App-question">
             <h4>5. How low is the bar?</h4>

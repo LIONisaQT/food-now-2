@@ -3,7 +3,34 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ImageListItemBar from '@mui/material/ImageListItemBar';
 
-export default function CategoryList() {
+export default function CategoryList(props) {
+  // let list = [];
+
+  // list.push(itemData[0].title);
+  // list.push(itemData[1].title);
+
+  // const finalList = list.toString();
+  // props.update("term",finalList);
+
+  const [list, setList] = React.useState([]);
+
+
+  const handleClick = event => {
+    console.log(event.target.alt);
+    if(list.indexOf(event.target.alt) === -1) {
+      console.log(`pushing ${event.target.alt}`)
+      list.push(event.target.alt);
+    }
+    else {
+      console.log("splicing")
+      let itemToRemove = list.indexOf(event.target.alt)
+      list.splice(itemToRemove,1);
+    }
+    props.update("term", list);
+    console.log(list);
+  };
+
+
   return (
     <section className="App-question">
       <h4>1. Choose categories!</h4>
@@ -15,6 +42,8 @@ export default function CategoryList() {
               srcSet={`${item.img}`}
               alt={item.title}
               loading="lazy"
+              value={item.title}
+              onClick={handleClick}
             />
             <ImageListItemBar
               title={item.title}
